@@ -7,20 +7,20 @@
 ```bash 
 git --version
 ```
-Con este comando comprobaremos si tenemos instalado Git en nuestro sistema y si es así podremos ver de que versión se trata
+Con este comando comprobaremos si tenemos instalado Git en nuestro sistema y si es así podremos ver de qué versión se trata
 
 ## Paso 2
 ![image](https://user-images.githubusercontent.com/91153605/139737319-7366079c-3e3a-4517-9a28-f24f1cfe2b5b.png)
 ```bash
 sudo apt update
 ```
-Si no lo teniamos instalado deveremos usar este comando para actualizar los paquetes
+Si no lo teníamos instalado deberemos usar este comando para actualizar los paquetes
 ## Paso 3
 ![image](https://user-images.githubusercontent.com/91153605/139737414-e9d908e4-d59c-4164-9110-9f74ee2f4a7b.png)
 ```bash
 sudo apt install git
 ```
-Una vez instalado comprobaremos que esta bien instalado con el comando ```git --version ```
+Una vez instalado comprobaremos que está bien instalado con el comando ```git --version ```
 ## Paso 4
 ![image](https://user-images.githubusercontent.com/91153605/139737566-6fd84aa9-5822-4d8f-9f24-d8db80e62604.png)
 
@@ -53,20 +53,20 @@ Para descomprimir el paquete.
 
 ## Paso 7
 ![image](https://user-images.githubusercontent.com/91153605/139745032-707b47be-7de2-4cbf-a3e2-d23e061bb612.png)
-No colocamos en el directorio git-*
+No colocamos en el directorio ```git-*```
 
 ## Paso 8 
 ![image](https://user-images.githubusercontent.com/91153605/139745209-91a62e1b-5af3-46e6-b3ba-6dbe74b7fc65.png)
-´´´bash 
+```bash 
 make prefix=/usr/local all
 sudo make prefix=/usr/local install
-´´´
-Con estos comando crearemos e intalaremos el paquete
+```
+Con estos comandos crearemos e instalaremos el paquete
 
 ## Paso 9
 ![image](https://user-images.githubusercontent.com/91153605/139745626-a96169ce-c3c4-4ffd-b5bb-cd9469fb9d0a.png)
 
-Para finalizar introduciremos el comando ```exec bash``` y por ultimo ```git --version``` comprovando que la versión es la deseada
+Para finalizar introduciremos el comando ```exec bash``` y por último ```git --version``` comprobando que la versión es la deseada
 
 
 
