@@ -31,4 +31,45 @@ sudo apt install libz-dev libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext c
 Con estos comandos instalaremos dependencias necesarias para modificar Git
 
 ## Paso 5
-No he podido realizar los pasos posteriores.
+![image](https://user-images.githubusercontent.com/91153605/139742270-4b312ac1-c927-4577-8e13-05d30aa1cc60.png)
+Nos colocaremos en el directorio tmp con los comandos 
+```bash
+mkdir tmp
+cd /tmp
+```
+Y posteriormente descargaremos la vesion más reciente de git.
+```bash 
+curl -o git.tar.gz https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.29.3.tar.gz
+```
+Si este comando te da problemas debes instalar curl con el comando ```sudo apt install curl```
+
+## Paso 6
+![image](https://user-images.githubusercontent.com/91153605/139742937-ec6a5881-3dcd-4843-8ff1-ea053ca14100.png)
+
+```bash
+tar -zxf git.tar.gz
+```
+Para descomprimir el paquete.
+
+## Paso 7
+![image](https://user-images.githubusercontent.com/91153605/139745032-707b47be-7de2-4cbf-a3e2-d23e061bb612.png)
+No colocamos en el directorio git-*
+
+## Paso 8 
+![image](https://user-images.githubusercontent.com/91153605/139745209-91a62e1b-5af3-46e6-b3ba-6dbe74b7fc65.png)
+´´´bash 
+make prefix=/usr/local all
+sudo make prefix=/usr/local install
+´´´
+Con estos comando crearemos e intalaremos el paquete
+
+## Paso 9
+![image](https://user-images.githubusercontent.com/91153605/139745626-a96169ce-c3c4-4ffd-b5bb-cd9469fb9d0a.png)
+
+Para finalizar introduciremos el comando ```exec bash``` y por ultimo ```git --version``` comprovando que la versión es la deseada
+
+
+
+
+
+
